@@ -68,7 +68,7 @@ Launch EC2 Instance:
 1. Sign in to the AWS Management Console.
 2. Open the Amazon EC2 console by selecting EC2 under Compute.
 3. From the Amazon EC2 dashboard, select Launch Instance.
-4. The Choose an Amazon Machine Image (AMI) page displays a list of basic configurations called Amazon Machine Images (AMIs) that serve as templates for your instance. Select -
+4. The Choose an Amazon Machine Image (AMI) page displays a list of basic configurations called Amazon Machine Images (AMIs) that serve as templates for your instance. Select - "Ubuntu Server 26.04 LTS (HVM), SSD Volume Type" that has the AMI value - ami-0d97d7f07b25dd693
 5. Scroll down and select the key pair you created in the creating a key pair section above or any existing key pair you intend to use.
   >Select Select an existing security group.
   >Select the devopsSG1 security group that you created.
