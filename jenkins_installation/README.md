@@ -64,7 +64,7 @@ Configure Security Group:
   >Under Port Range, enter 8080.
 7. Select Create. 
 
-Configure Security Group:
+Launch EC2 Instance:
 1. Sign in to the AWS Management Console.
 2. Open the Amazon EC2 console by selecting EC2 under Compute.
 3. From the Amazon EC2 dashboard, select Launch Instance.
