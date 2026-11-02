@@ -181,13 +181,15 @@ sudo systemctl status jenkins
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-
+Use the password to login.
 ---
 
 ## I. Install Plugins
 
 <!-- TODO: Add detailed steps -->
-
+1. Install Suggested Plugins.
+2. Provide username, password, confirm password, full name & mail.
+3. Keep URL as it is, save & finish.
 ---
 
 ## J. Use Jenkins
