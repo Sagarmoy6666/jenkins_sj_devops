@@ -40,11 +40,11 @@ This file contains the steps for the following activities. Completing them will 
 ## Prerequisites
 
 <!-- TODO: List prerequisites (e.g., AWS account, key pair, security group access, etc.) -->
-1. An AWS account. If you don’t have one, you can register here (https://portal.aws.amazon.com/billing/signup#/start).
+1. An AWS account. If you don’t have one, you can register here -> (https://portal.aws.amazon.com/billing/signup#/start).
 
-2. An Amazon EC2 key pair. If you don’t have one, refer to Creating a key pair.
+2. An Amazon EC2 key pair. If you don’t have one, refer to Creating a key pair -> (https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/#creating-a-key-pair).
 
-3. An AWS IAM User with programmatic key access and permissions to launch EC2 instances
+3. An AWS IAM User with programmatic key access and permissions to launch EC2 instances -> (https://plugins.jenkins.io/ec2/#plugin-content-iam-setup)
 ---
 
 ## A. Create an EC2 Instance
