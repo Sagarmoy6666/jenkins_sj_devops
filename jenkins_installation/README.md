@@ -51,7 +51,7 @@ This file contains the steps for the following activities. Completing them will 
 
 <!-- TODO: Add detailed steps -->
 Configure Security Group:
----
+-
 1. Sign in to the AWS Management Console.
 2. Open the Amazon EC2 console by selecting EC2 under Compute.
 3. In the left-hand navigation bar, select Security Groups, and then select Create Security Group.
