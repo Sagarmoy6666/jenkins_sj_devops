@@ -9,7 +9,7 @@ This file contains the steps for the following activities. Completing them will 
 - **A.** Create an EC2 Instance with proper security group settings
 - **B.** Login to EC2 Instance
 - **C.** Install Java
-- **D.** Install Jenkins
+- **D.** Validate the JDK & Jenkins Versions
 - **E.** Add Jenkins Repository & GPG Key
 - **F.** Install Jenkins
 - **G.** Enable & Start Jenkins Service
@@ -25,7 +25,7 @@ This file contains the steps for the following activities. Completing them will 
 - [A. Create an EC2 Instance with proper security group settings](#a-create-an-ec2-instance-with-proper-security-group-settings)
 - [B. Login to EC2 Instance](#b-login-to-ec2-instance)
 - [C. Install Java](#c-install-java)
-- [D. Install Jenkins](#d-install-jenkins)
+- [D. Validate the JDK & Jenkins Versions](#d-validate-the-jdk--jenkins-versions)
 - [E. Add Jenkins Repository & GPG Key](#e-add-jenkins-repository--gpg-key)
 - [F. Install Jenkins](#f-install-jenkins)
 - [G. Enable & Start Jenkins Service](#g-enable--start-jenkins-service)
@@ -93,7 +93,6 @@ Configure Security Group:
 <!-- TODO: Add detailed steps -->
 
 ```bash
-# TODO: Add commands 
 sudo apt update
 sudo apt install -y fontconfig openjdk-21-jre
 java -version
@@ -101,13 +100,18 @@ java -version
 
 ---
 
-## D. Install Jenkins
+## D. Validate the JDK & Jenkins Versions
 
 <!-- TODO: Add detailed steps -->
+Current Active Releases Overview for JDK. We are using JDK21
+| Version | Release Type | Latest Patch Version | Release Date |
+|---------|--------------|----------------------|--------------|
+| JDK 27 | Short-Term (Latest Stable) | 27.0.1 | September 2026 |
+| JDK 25 | Long-Term Support (Latest LTS) | 25.0.5 | September 2025 |
+| JDK 21 | Long-Term Support (Prior LTS) | 21.0.13 | September 2023 |
+| JDK 17 | Long-Term Support | 17.0.21 | September 2021 |
 
-```bash
-# TODO: Add commands
-```
+The latest stable (Long-Term Support, or LTS) Jenkins version is 2.580.2. We are using 
 
 ---
 
@@ -116,7 +120,14 @@ java -version
 <!-- TODO: Add detailed steps -->
 
 ```bash
-# TODO: Add commands
+sudo apt update
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/" | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
 
 ---
@@ -126,7 +137,8 @@ java -version
 <!-- TODO: Add detailed steps -->
 
 ```bash
-# TODO: Add commands
+sudo apt update
+sudo apt install -y jenkins
 ```
 
 ---
@@ -136,7 +148,9 @@ java -version
 <!-- TODO: Add detailed steps -->
 
 ```bash
-# TODO: Add commands
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
 ```
 
 ---
@@ -144,9 +158,10 @@ java -version
 ## H. Unlock Jenkins in the Web Browser
 
 <!-- TODO: Add detailed steps -->
-
+1. Open your browser and navigate to http://<YOUR_EC2_PUBLIC_IP>:8080.
+2. Retrieve the initial administrator password from your server:
 ```bash
-# TODO: Add commands
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 ---
