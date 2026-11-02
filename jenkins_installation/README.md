@@ -49,7 +49,7 @@ This file contains the steps for the following activities. Completing them will 
 
 ## A. Create an EC2 Instance with proper security group settings
 
-<!-- TODO: Add detailed steps 
+<!-- TODO: Add detailed steps -->
 1. Sign in to the AWS Management Console.
 2. Open the Amazon EC2 console by selecting EC2 under Compute.
 3. In the left-hand navigation bar, select Security Groups, and then select Create Security Group.
@@ -61,7 +61,7 @@ This file contains the steps for the following activities. Completing them will 
   >Select Add Rule, and then select HTTP from the Type list.
   >Select Add Rule, and then select Custom TCP Rule from the Type list.
   >Under Port Range, enter 8080.
-7. Select Create. -->
+7. Select Create. 
 
 ---
 
