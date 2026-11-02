@@ -6,7 +6,7 @@ This content explains the steps to install Jenkins.
 
 This file contains the steps for the following activities. Completing them will let us use Jenkins.
 
-- **A.** Create an EC2 Instance
+- **A.** Create an EC2 Instance with proper security group settings
 - **B.** Login to EC2 Instance
 - **C.** Install Java
 - **D.** Install Jenkins
@@ -22,7 +22,7 @@ This file contains the steps for the following activities. Completing them will 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [A. Create an EC2 Instance](#a-create-an-ec2-instance)
+- [A. Create an EC2 Instance with proper security group settings](#a-create-an-ec2-instance)
 - [B. Login to EC2 Instance](#b-login-to-ec2-instance)
 - [C. Install Java](#c-install-java)
 - [D. Install Jenkins](#d-install-jenkins)
