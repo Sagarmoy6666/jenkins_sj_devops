@@ -58,9 +58,13 @@ Configure Security Group:
 5. Select your VPC from the list. You can use the default VPC.
 6. On the Inbound tab, add the rules as follows:
   >Select Add Rule, and then select SSH from the Type list.
+  
   >Under Source, select Custom, and in the text box, enter the IP address 0.0.0.0/0.
+  
   >Select Add Rule, and then select HTTP from the Type list.
+  
   >Select Add Rule, and then select Custom TCP Rule from the Type list.
+  
   >Under Port Range, enter 8080.
 7. Select Create. 
 
@@ -70,9 +74,9 @@ Launch EC2 Instance:
 3. From the Amazon EC2 dashboard, select Launch Instance.
 4. The Choose an Amazon Machine Image (AMI) page displays a list of basic configurations called Amazon Machine Images (AMIs) that serve as templates for your instance. Select - "Ubuntu Server 26.04 LTS (HVM), SSD Volume Type" that has the AMI value - ami-0d97d7f07b25dd693
 5. Scroll down and select the key pair you created in the creating a key pair section above or any existing key pair you intend to use.
-6.  >Select Select an existing security group.
+6. Select Select an existing security group.
   >Select the devopsSG1 security group that you created.
-  >Select Launch Instance.
+  Select Launch Instance.
 7. In the left-hand navigation bar, choose Instances to view the status of your instance. Initially, the status of your instance is pending. After the status changes to running, your instance is ready for use.
 ---
 
