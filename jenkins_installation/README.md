@@ -83,9 +83,9 @@ Launch EC2 Instance:
 
 <!-- TODO: Add detailed steps -->
 1. Open a terminal or PowerShell window.
-2. Use the ssh command to connect to the instance. You will specify the private key (.pem) file and ec2-user@public_dns_name. The command is provided in 
+2. Use the ssh command to connect to the instance. You will specify the private key (.pem) file and ec2-user@public_dns_name. The command is provided in "Connect" -> In SSH Client.
 ```bash
-# TODO: Add commands
+ssh -i "devopskey1.pem" ubuntu@ec2-54-196-134-190.compute-1.amazonaws.com
 ```
 3. Enter yes.
 
