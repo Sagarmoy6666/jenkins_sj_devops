@@ -160,7 +160,11 @@ sudo apt install -y jenkins
 ## G. Enable & Start Jenkins Service
 
 <!-- TODO: Add detailed steps -->
-
+Check if Jenkins service is available. Run below command and keep pressing down arrow till Jenkins service appears.
+```bash
+systemctl list-unit-files --type=service
+```
+Enable Jenkins service to start with instance boot up. Start Jenkins service in current session. Check Jenkins service.
 ```bash
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
