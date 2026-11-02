@@ -83,7 +83,17 @@ Launch EC2 Instance:
 
 <!-- TODO: Add detailed steps -->
 1. Open a terminal or PowerShell window.
-2. Use the ssh command to connect to the instance. You will specify the private key (.pem) file and ec2-user@public_dns_name. The command is provided in "Connect" -> In SSH Client.
+2. Make sure to use below commands from CMD to make sure the pem file has less permissions. 
+```bash
+wsl -d Ubuntu
+cd /mnt/c/<path of the key in C: drive>
+```
+#to make sure the file is present.
+```bash
+ls -l
+sudo chmod 400 devopskey1.pem
+```
+4. Back in powershell, make sure to be in the path of the PEM file. Use the ssh command to connect to the instance. You will specify the private key (.pem) file and ec2-user@public_dns_name. The command is provided in "Connect" -> In SSH Client.
 ```bash
 ssh -i "devopskey1.pem" ubuntu@ec2-54-196-134-190.compute-1.amazonaws.com
 ```
