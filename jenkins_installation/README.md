@@ -107,6 +107,7 @@ ssh -i "devopskey1.pem" ubuntu@ec2-54-196-134-190.compute-1.amazonaws.com
 
 ```bash
 sudo apt update
+sudo apt upgrade -y
 sudo apt install -y fontconfig openjdk-21-jre
 java -version
 ```
